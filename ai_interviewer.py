@@ -228,7 +228,6 @@ question_bank = {
 questions = question_bank.get(selected_lang, question_bank["Python"])
 random.shuffle(questions)
 
-
 score = 0
 for i, (q, ans) in enumerate(questions[:5]):  # Ask only 5 questions
     speak(f"Question {i+1}: {q}")
